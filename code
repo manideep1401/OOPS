@@ -1,0 +1,48 @@
+ class Myclass {
+
+    static int  count = 0;
+    final double pi =3.1415;
+
+    public Myclass() {
+         count++;
+         System.out.println("count = "+count);
+    
+    
+}
+public static void main(String[] args) {
+    System.out.println("count = "+count);
+    Myclass c1 = new Myclass();
+    Myclass c2 = new Myclass();
+    Myclass c3 = new Myclass();
+    Myclass c4 = new Myclass();
+    Myclass c5 = new Myclass();
+    Myclass c6 = new Myclass();
+    System.out.println("count = "+count); 
+}
+}
+
+//new book
+
+class Book {
+    
+    String title;
+    String author;
+    int year;
+
+    public Book(String title , String author, int year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+    }
+public void display() {
+    System.out.println("title = "+title);
+    System.out.println("author of the book = "+author);
+    System.out.println("year of publish = "+year);
+}
+public static void main(String[] args) {
+    Book b1 = new Book("Harry Potter", "J.K. Rowling", 1997);
+    Book b2 =new Book("The Lord of the Rings", "J.R.R. Tolkien", 1954);
+    b1.display();
+    b2.display();
+}
+}

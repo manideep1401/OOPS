@@ -1,4 +1,4 @@
- class Myclass {
+  class Myclass {
 
     static int  count = 0;
     final double pi =3.1415;
@@ -46,3 +46,125 @@ public static void main(String[] args) {
     b2.display();
 }
 }
+
+
+👌👌👌👌
+
+prob-2
+public class Vehcile {
+    String brand = "Unknown";
+    int Speed = 0;
+
+    Vehcile() {
+
+        this.brand = brand;
+        this.Speed = Speed;
+
+        System.err.println("brand :"+brand);
+        System.err.println("Speed :"+Speed +"km/h");
+}
+
+void start(){
+    System.out.println(brand+"Starting..");
+}
+}//end
+
+class Car extends Vehcile{
+    int doors;
+    public Car (String brand, int Speed, int doors){
+        this.brand = brand;
+        this.Speed = Speed;
+        this.doors = doors;
+    }
+
+    public  void showCarDetails(){
+    System.out.println("Car has :"+doors+"doors");
+    }
+}//end
+
+class bikes extends Vehcile{
+    boolean hasgears;
+
+    public bikes(String brand, int Speed, boolean hasgears){
+        this.brand = brand;
+        this.Speed = Speed;
+        this.hasgears = hasgears;
+}
+
+public  void showbikeDetails(){
+    System.out.println("Car has :"+hasgears+"hasgerrs");
+    }
+}//end
+
+
+
+class Truck extends Vehcile{
+    int Capacity;
+    public Truck (String brand, int Speed, int Capacity){
+        this.brand = brand;
+        this.Speed = Speed;
+        this.Capacity = Capacity;
+    }
+
+    public  void showCarDetails(){
+    System.out.println("Car has :"+Capacity+"Capacity");
+    }
+}//end
+
+
+public class Main{
+    public static void main(String[] args) {
+        
+        
+    }
+}
+
+
+
+
+
+prob-1
+
+import java.util.Scanner;
+import jdk.jshell.execution.Util;
+
+public class Calci {
+    
+    public void addition(int a , int b){
+        System.out.println("addition :"+(a+b));
+    }
+
+    public  void biff(int a , int b){
+        System.out.println("Substraction :"+(a - b));
+    }
+
+} //end
+
+class  Calci2 extends Calci{
+
+    public void multi(int a , int b){
+        System.out.println("multiplication :"+(a*b));
+    }
+
+} // end
+
+class Calci3 extends Calci2{
+
+    public void divid(int a , int b){
+if(b == 0){
+        System.out.println("b shouls not be zero");     }
+    else{
+        System.out.println("Division :" +(a/b));
+    }
+    }
+}//end
+
+public class Multilevel {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner();
+        
+    }
+}
+
+//not completed complete

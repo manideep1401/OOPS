@@ -155,3 +155,35 @@ class Samenumber{
 
 
 7th---
+
+import  java.util.Scanner;
+
+
+class Increasingorder{
+
+    public static void main(String[] args) {
+    
+        Scanner sc = new Scanner(System.in);
+
+    System.out.println("enter the first number");
+    int n = sc.nextInt();
+    System.out.println("enter your second number");
+    int m = sc.nextInt();
+    System.out.println("enter your third number");
+    int k = sc.nextInt();
+
+    if(n > m && m > k){
+        System.out.println(" they are inincreasing order");
+    }
+    else if(n<m && m<k){
+        System.out.println("they are in decreasing order");
+    }
+    else{
+        System.out.println("they are not in increasing order or decreasing order");
+    }
+}
+}
+
+8th---
+
+

@@ -1,0 +1,157 @@
+Assinment codes;;___-
+
+1st--
+
+class Book {
+    String title;
+    String authur;
+    int yearofpublication;
+
+    Book(String title, String authur, int yearofpublication){
+        this.title = title;
+        this.authur = authur;
+        this.yearofpublication = yearofpublication;
+
+    }
+
+    void  display(){
+
+        System.out.println("Title: "+title);
+        System.out.println("Authur: "+authur);
+        System.out.println("Year of Publication: "+yearofpublication);
+    }
+
+
+
+    public static void main(String[] args) {
+
+        Book b1 = new Book("Harry Potter", "J.K. Rowling", 1997);
+        Book b2 = new Book("The Lord of the Rings", "J.R.R. Tolki" ,1999);
+
+        b1.display();
+        b2.display();
+    }
+}
+//end
+
+2nd--
+copy paste
+
+3rd--
+
+
+
+class VisibilityExample{
+
+    public  int publicVariable = 10;
+    private int   privateVariable = 20;
+
+    public void publicMethod(){
+    System.out.println("this is Public Method");
+    }
+
+    private void privateMethod(){
+        System.out.println("this is Private Method");
+}
+
+
+}
+
+class Main{
+    public static void main(String[] args) {
+
+        VisibilityExample v1 = new VisibilityExample();
+
+        v1.publicMethod();
+        v1.privateMethod();
+        System.out.println(v1.publicVariable);
+        System.out.println(v1.privateVariable);
+}
+}
+
+
+4thg--
+
+import java.util.Scanner;
+
+class conditional {
+String day;
+public static void main(String[] args) {
+    
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("enter the number");
+    int n = sc.nextInt();
+
+    
+if (n == 1){
+        System.out.println("monday");
+    }
+    else if (n == 2){
+        System.out.println("tuesday");
+}
+
+else if(n == 3){
+    System.out.println("wednesday");
+}
+else if(n == 4){
+    System.out.println("thursday");
+}
+else if(n == 5){
+    System.out.println("friday");
+}
+else if(n == 6){
+    System.out.println("saturday");
+}
+else if(n == 7){
+    System.out.println("sunday");
+
+}
+else{
+    System.out.println("invalid number");
+}
+}
+}
+
+
+5th---
+
+class Multiplication{
+    public static void main(String[] args) {
+        int num1 = 5;
+        int num2 = 0;
+
+
+        for (num1 = 5; num2 <= 10; num2++) {
+            System.out.println(num1 * num2);
+            
+        }
+}
+}
+
+
+6th---
+
+import java.util.Scanner;
+
+class Samenumber{
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the first  number");
+        float a = sc.nextFloat();
+        System.out.println("enter the second number");
+        float b = sc.nextFloat();
+
+        if(a == b){
+            System.out.println("Both numbers are same");
+
+        }
+        else{
+            System.out.println("Both numbers are not same");
+        }
+}
+}
+
+
+7th---

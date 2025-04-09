@@ -168,3 +168,81 @@ public class Multilevel {
 }
 
 //not completed complete
+
+
+
+
+WEEK--7:--
+
+
+abstract class Animal{
+    public abstract void sound();
+    abstract void sound();
+}
+class Lion extends Animal{
+    void sound(){
+        System.out.println(" Lion Roars..");
+}}
+
+    class Tiger extends Animal{
+        void sound(){
+    System.out.println(" Tiger Roars..");
+    }
+    }
+
+    class Animal1{
+        public static void main(String[] args) {
+            Lion a = new Lion();
+            a.sound();
+
+            Tiger t = new Tiger();
+            t.sound();
+
+
+    }
+    }
+
+
+
+2nd-----
+
+abstract  class PatternPrinting{
+    int n;
+    abstract void printPattern(int n);
+}
+
+class Starpattren  extends PatternPrinting{
+
+void printPattern(int n){
+    for(int i=0;i<n;i++){
+        for(int j=0 ;j<=i; j++){
+            System.out.print("*");
+}
+    System.out.print(" ");
+}
+}
+}
+
+class  Numberpattren  extends PatternPrinting{
+    void printPattern(int n){
+        for(int i=0;i<n;i++){
+            for(int j=0 ;j<=i; j++){
+                System.out.print("1");
+}
+System.out.print(" ");
+}
+}
+}
+
+class Pattern{
+    public static void main(String[] args) {
+        Starpattren pp = new Starpattren();
+        pp.printPattern(5);
+
+        Numberpattren nm = new Numberpattren();
+        nm.printPattern(5);
+    }
+}
+
+3----
+

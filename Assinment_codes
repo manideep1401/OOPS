@@ -69,6 +69,21 @@ class Main{
 }
 }
 
+java VisibilityExample
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+VisibilityExample.java:25: error: privateMethod() has private access in VisibilityExample
+        v1.privateMethod();
+          ^
+VisibilityExample.java:27: error: privateVariable has private access in VisibilityExample
+        System.out.println(v1.privateVariable);
+                             ^
+2 errors
+
+
+
+
+
+
 
 4thg--
 

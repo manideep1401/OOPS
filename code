@@ -246,3 +246,133 @@ class Pattern{
 
 3----
 
+..................................................................................
+
+WEEK--8
+
+1st)..
+
+interface Shapee {
+    float pi = 3.14f;
+    int getperimeter();
+}
+
+class Rectangle implements Shapee {
+    int length;
+    int breadth;
+
+    public Rectangle(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public int getperimeter() {
+        return 2 * (length + breadth);
+    }
+}
+
+class Circle implements Shapee {
+    private int radius;
+
+    public Circle(int radius) {
+        this.radius = radius;
+    }
+
+    public int getperimeter() {
+        return (int) (2 * pi * radius);
+    }
+}
+
+class Triangle implements Shapee {
+    private int side1;
+    private int side2;
+    private int side3;
+
+    public Triangle(int side1, int side2, int side3) {
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
+    }
+
+    public int getperimeter() {
+        return (side1 + side2 + side3);
+    }
+}
+
+class InShape {
+    public static void main(String[] args) {
+        Rectangle r = new Rectangle(5, 6);
+        System.out.println("Rectangle perimeter: " + r.getperimeter());
+
+        Circle c = new Circle(7);
+        System.out.println("Circle perimeter: " + c.getperimeter());
+
+        Triangle t = new Triangle(8, 9, 10);
+        System.out.println("Triangle perimeter: " + t.getperimeter());
+    }
+}
+
+
+2nd)...............................
+
+interface intplayable {
+    void play();
+    
+}
+class Football implements intplayable{
+    public void play(){
+        System.out.println("Football is playing");
+    }
+}
+
+class Vollyball implements intplayable{
+    public void play(){
+        System.out.println("Vollyball is playing");
+    }
+}
+
+class Basketball implements intplayable{
+    public void play(){
+        System.out.println("Basketball is playing");
+    }
+}
+
+public  class playable{
+    public static void main(String[] args) {
+        Football f = new Football();
+        f.play();
+        Vollyball v = new Vollyball();
+        v.play();
+        Basketball b = new Basketball();
+        b.play();
+    }
+}
+
+3rd)...............................................
+
+interface loginSystem{
+    public boolean  login(String username,String password);
+    
+}
+class Universitylogin implements loginSystem {
+    public boolean login(String username, String password) {
+        if(username == "ashish1" && password == "cse1111") {
+            System.out.println("Successfully logged in..");
+            return true;
+    }
+    else {
+        System.out.println("Invalid username or password");
+        return false;
+    }
+}
+}
+
+class login{
+    public static void main(String[] args) {
+        Universitylogin ul = new Universitylogin();
+        ul.login("ashish1", "cse1111");
+        ul.login("ashih","ashish01");
+    }
+}
+
+

@@ -477,3 +477,80 @@ class University {
         }
 }
 
+----------------------------------------------------------------------
+WEEK-10
+=======================
+1st-\
+class Password{
+    public static void main(String[] args) {
+        String firstName ="tiger";
+        String middleName ="animal";
+        int age = 12;
+
+        String initials = firstName.substring(2,3)+middleName.substring(2,3);
+        String password = initials+age;
+        System.out.println("your password :"+password);
+    }
+}
+
+2nd---
+class Operations2{
+    public static void main(String[] args) {
+        String first = "Welcome! you are practicing  String concept";
+
+        System.out.println(first.toUpperCase());
+        System.out.println(first.toLowerCase());
+        System.out.println(first.length());
+        System.out.println(first.indexOf("course"));
+
+    }
+
+}
+
+3rd--=-
+
+import java.util.Arrays;
+class Arrayss{
+    public static void main(String[] args) {
+        int first[]  = {5,4,7,9,6};
+        String array[] = {"javaa","arrays","Strings"};
+        Arrays.sort(first);
+System.out.println(Arrays.toString(first));
+        Arrays.sort(array);
+
+        for(int f : first){
+            System.out.print(f+" ");
+        }
+        System.out.println(" ");
+        for(String A : array){
+            System.out.print(A+" ");
+        }
+  System.out.println(" ");  
+        //copyy
+        int[] g = {7,8,9,6,5};
+        int[] copy = Arrays.copyOf(g,g.length);
+        System.out.println(Arrays.toString(copy)+" ");
+    
+    }
+
+}
+
+4th-=-=-=-=-
+
+
+import java.util.ArrayList;
+
+class Arraylistmethods{
+    public static void main(String[] args) {
+        
+        ArrayList<String> bikes = new ArrayList<>();
+
+        bikes.add("TVS");
+        bikes.add("Honda");
+        bikes.add("Yamaha");
+        bikes.add("BMW");
+        //inserting
+        bikes.add(0,"Apache");
+
+    }
+}
